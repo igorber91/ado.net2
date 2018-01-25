@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1687A94A-1EC8-46F5-B428-7B66848B5563}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp6</RootNamespace>
+    <AssemblyName>WindowsFormsApp6</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\igor\Desktop\seim\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost:62927/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D42697378A9DAC81BC389936342835D466EB3008</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApp6_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente.Designer.cs">
+      <DependentUpon>cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataReader.Designer.cs">
+      <DependentUpon>dataReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="departamentosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departamentosProductos.Designer.cs">
+      <DependentUpon>departamentosProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresarDinero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresarDinero.Designer.cs">
+      <DependentUpon>ingresarDinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrarCliente.Designer.cs">
+      <DependentUpon>registrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sesion.Designer.cs">
+      <DependentUpon>sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sesion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sesion2.Designer.cs">
+      <DependentUpon>sesion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sesion3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sesion3.Designer.cs">
+      <DependentUpon>sesion3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sesion4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sesion4.Designer.cs">
+      <DependentUpon>sesion4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session.cs" />
+    <Compile Include="sqlToTxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sqlToTxt.Designer.cs">
+      <DependentUpon>sqlToTxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas.Designer.cs">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarCantidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarCantidades.Designer.cs">
+      <DependentUpon>visualizarCantidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarCuentas.Designer.cs">
+      <DependentUpon>visualizarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarClientesCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarClientesCuenta.Designer.cs">
+      <DependentUpon>visualizarClientesCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas2.Designer.cs">
+      <DependentUpon>ventas2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarActualizarDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarActualizarDepartamentos.Designer.cs">
+      <DependentUpon>visualizarActualizarDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertarProductos.Designer.cs">
+      <DependentUpon>insertarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarDepartamentosProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarDepartamentosProducto.Designer.cs">
+      <DependentUpon>visualizarDepartamentosProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="visualizarVentasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarVentasClientes.Designer.cs">
+      <DependentUpon>visualizarVentasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarVentasProductos - Copia - Copia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizarVentasProductos - Copia - Copia.Designer.cs">
+      <DependentUpon>visualizarVentasProductos - Copia - Copia.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataReader.resx">
+      <DependentUpon>dataReader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departamentosProductos.resx">
+      <DependentUpon>departamentosProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresarDinero.resx">
+      <DependentUpon>ingresarDinero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrarCliente.resx">
+      <DependentUpon>registrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion.resx">
+      <DependentUpon>sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion2.resx">
+      <DependentUpon>sesion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion3.resx">
+      <DependentUpon>sesion3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion4.resx">
+      <DependentUpon>sesion4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sqlToTxt.resx">
+      <DependentUpon>sqlToTxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarCantidades.resx">
+      <DependentUpon>visualizarCantidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarCuentas.resx">
+      <DependentUpon>visualizarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarClientesCuenta.resx">
+      <DependentUpon>visualizarClientesCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas2.resx">
+      <DependentUpon>ventas2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarActualizarDepartamentos.resx">
+      <DependentUpon>visualizarActualizarDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertarProductos.resx">
+      <DependentUpon>insertarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarDepartamentosProducto.resx">
+      <DependentUpon>visualizarDepartamentosProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="visualizarVentasClientes.resx">
+      <DependentUpon>visualizarVentasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizarVentasProductos - Copia - Copia.resx">
+      <DependentUpon>visualizarVentasProductos - Copia - Copia.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApp6_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

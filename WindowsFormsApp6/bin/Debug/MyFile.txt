@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Productos>
+    <cantidad>3</cantidad>
+    <nombre>tomates</nombre>
+  </Productos>
+  <Productos>
+    <cantidad>1</cantidad>
+    <nombre>peras</nombre>
+  </Productos>
+</NewDataSet>
